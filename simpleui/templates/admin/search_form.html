@@ -104,7 +104,7 @@
                         {% if pair.0.0 == '_' or pair.0 == 'o'%}
                             <input type="hidden" name="{{ pair.0 }}" value="{{ pair.1 }}"/>
                         {% else %}
-                            <input type="hidden" class="form-params" data-name="{{ pair.0 }}" value="{{ pair.1 }}"/>
+                            <input type="hidden" class="form-params" data-name="{{ pair.0 }}" value="{{ pair.1 }}" name="{{ pair.0 }}"/>
                         {% endif %}
                     {% endif %}
                 {% endfor %}
